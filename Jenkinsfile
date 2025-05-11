@@ -43,7 +43,7 @@ stage('approval') {
      }
     }
    }
-   stage('apply) {
+   stage('apply') {
        when { 
           expression {params.action =='apply'}
          }
