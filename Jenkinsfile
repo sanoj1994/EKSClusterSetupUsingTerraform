@@ -17,7 +17,7 @@ pipeline {
              sh 'terraform init -no-color -backend-config="${ENVIRONMENT}/${ENVIRONMENT}.tfbackend"'
   }
 }
-  stage ('init') {
+  stage ('validate') {
    steps {
       sh 'terraform validate -no-color'
     }
