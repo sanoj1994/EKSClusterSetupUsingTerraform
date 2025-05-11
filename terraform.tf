@@ -9,9 +9,14 @@ terraform {
 
 
 backend "s3" {
-  region = "ap-south-1"
-  dynamodb_table = "terraform-state-lock"
-  profile = "terraformprofile"
+   bucket = "terraform-lock-state-bucket-sanojtech"
+   key = "eks/terraform.tfstate"
+   region = "ap-south-1"
+   use_lockfile = true 
+ # region = "ap-south-1"
+  #dynamodb_table = "terraform-state-lock"
+  #profile = "terraformprofile"
+
 }
 }
 
