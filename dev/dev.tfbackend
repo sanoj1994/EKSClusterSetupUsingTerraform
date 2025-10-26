@@ -1,2 +1,2 @@
-bucket="terraform-dev-state-bucket-sanojtech"
+bucket="terraform-dev-state-bucket-sanojtech3"
 key="eks/terraform.tfstate"
