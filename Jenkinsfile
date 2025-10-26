@@ -28,7 +28,7 @@ pipeline {
      expression {params.action =='plan' || params.action =='apply'}
     }
     steps {
-     sh 'terraform plan -no-color -input=false -out=tfplan --var-file =${ENVIRONMENT}/${ENVIRONMENT}.tfvars'
+     sh 'terraform plan -no-color -input=false -out=tfplan --var-file=${ENVIRONMENT}/${ENVIRONMENT}.tfvars'
     }
   }
 stage('approval') {
