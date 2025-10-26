@@ -57,7 +57,7 @@ stage('approval') {
               expression { params.action == 'destroy'}
           }
           steps {
-              sh 'terraform plan -no-color -destroy -out = tfplan --var-filr = ${ENVIRONMENT}.tfvars'
+              sh 'terraform plan -no-color -destroy -out=tfplan --var-filr = ${ENVIRONMENT}.tfvars'
               sh 'terraform show -no-color tfplan > tfplan.txt'
             }
           }
