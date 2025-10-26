@@ -25,5 +25,5 @@ backend "s3" {
 provider "aws" {
   # Configuration options
   region  = "ap-south-1"
-  profile = "terraformprofile"
+  #profile = "terraformprofile"
 }
